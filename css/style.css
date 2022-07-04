@@ -1,0 +1,17 @@
+:root {
+    --pr-color : #00492C;
+}
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: aqua;
+}
+.navbar-brand {
+    font-weight: 700;
+    font-size: 20px;
+}
+.nav-link{
+    font-size: 15px;
+}
+.nav-link.active{
+    font-weight: 700;
+}
