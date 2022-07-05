@@ -11,11 +11,10 @@
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Source+Sans+Pro:ital,wght@0,300;1,300;1,400&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Source+Sans+Pro:ital,wght@0,300;1,300;1,400&display=swap" rel="stylesheet"> 
     <!-- Style Css -->
     <link rel="stylesheet" href="css/style.css">
-
+   
     <!-- Logo Title Bar -->
     <link rel="icon" href="asset/img/Logo icon gmm.png" type="image/x-icon">
     <title>Gading Mitra Medika</title>
@@ -23,16 +22,16 @@
   <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
-        <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent position-fixed w-100">
+        <div class="container-fluid">
           <a class="navbar-brand" href="#">
-            <img src="asset/img/Logo icon gmm.png" width="50" alt="" class="d-inline-block align-text-top">
+            <img src="asset/img/Logo icon gmm.png" width="100" alt="">
             Gading Mitra Medika</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mx-auto">
+            <ul class="navbar-nav ms-auto">
               <li class="nav-item mx-2">
                 <a class="nav-link active" aria-current="page" href="#">BERANDA</a>
               </li>
@@ -48,10 +47,14 @@
               <li class="nav-item mx-2">
                 <a class="nav-link" href="#">KONTAK</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">IND
-                    <img src="asset/img/Flag IND.png" width="30" alt="">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  IND
+                  <img src="asset/img/Flag IND.png" width="30" alt="">
                 </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">English</a></li>
+                </ul>
               </li>
               
             </ul>
@@ -59,6 +62,95 @@
         </div>
       </nav>
     <!-- End Navbar -->
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-md-6 hero-tagline my-auto">
+                    <h2>SELAMAT DATANG DI</h2>
+                    <h4>Klinik dan Apotik Gading Mitra Medika 24 JAM</h4>
+                    <p>Memberikan informasi dan layanan kesehatan kepada masyarakat </p>
+                    <button class="button-lg-primary mt-3">Informasi Layanan</button>
+                    <a href="#">
+                        <img src="asset/img/arrow.png" alt="">
+                    </a>
+                </div>
+                <div class="col-md-6 img-hero">
+                  <img src="asset/img/Dokter.png" width="400">
+                  <p class="text-white">Dr. Widia Rina</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Hero Section -->
+
+    <!-- Section Layanan Kami -->
+    <section id="layanan">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h2>Layanan Kami</h2>
+          </div>
+          <div class="col-md-6 text-center offset-md-3">
+            <span>Klinik Gading Mitra Medika, memberikan pelayanan kesehatan kepada masyarakat di kab. Pasaman barat antara lain :  </span>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-md-6">
+            <div class="card-layanan">
+              <div class="circle-icon position-relative mx-auto">
+                <img src="asset/img/icon-user2.png" alt="" class="position-absolute top-50 start-50 translate-middle">
+              </div>
+              <h3 class="mt-4 text-center">Layanan kesehatan</h3>
+              <ul class="mt-3">
+                <li>
+                  <p>Poliklinik Dokter Umum 24 Jam</p>
+                </li>
+                <li>
+                  <p>Dokter Gigi</p>
+                </li>
+                <li>
+                  <p>Praktek Dokter Spesialis Terjadwal</p>
+                </li>
+                <li>
+                  <p>EKG</p>
+                </li>
+                <li>
+                  <p>Nebulizer (UAP)</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card-layanan">
+              <div class="circle-icon position-relative mx-auto">
+                <img src="asset/img/icon-user2.png" alt="" class="position-absolute top-50 start-50 translate-middle">
+              </div>
+              <h3 class="mt-4 text-center">Layanan kesehatan</h3>
+              <ul class="mt-3">
+                <li>
+                  <p>Khitanan</p>
+                </li>
+                <li>
+                  <p>Beda minor</p>
+                </li>
+                <li>
+                  <p>Perawatan Luka</p>
+                </li>
+                <li>
+                  <p>Pemeriksaan Kehamilan 3D dan 4D</p>
+                </li>
+                <li>
+                  <p>Swab Antigen</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Section Layanan Kami -->
 
     <!-- Optional JavaScript; choose one of the two! -->
 
